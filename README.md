@@ -1,6 +1,6 @@
 # Remove Microsoft AutoUpdate
 
-Microsoft AutoUpdate (MAU) on macOS has a habit of reinstalling itself. This tool sets up a macOS LaunchDaemon that automatically removes MAU files daily and on every boot.
+Microsoft AutoUpdate (MAU) on macOS has a habit of reinstalling itself like a self-resurrecting STD. This tool sets up a macOS LaunchDaemon that automatically removes MAU files daily and on every boot.
 
 ## What it removes
 
