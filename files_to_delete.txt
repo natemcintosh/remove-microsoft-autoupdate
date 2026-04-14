@@ -1,0 +1,4 @@
+- Delete `/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app`. Note that it may or may not have that `2.0` in the path.
+- Delete `/Library/LaunchAgents/com.microsoft.update.agent.plist`
+- Delete `/Library/LaunchDaemons/com.microsoft.autoupdate.helper.plist`
+- Delete `/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper`
