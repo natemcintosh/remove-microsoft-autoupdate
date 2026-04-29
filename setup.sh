@@ -37,14 +37,17 @@ install() {
     <string>/bin/bash</string>
     <string>-c</string>
     <string>
+ts="$(date "+%Y-%m-%d %H:%M:%S")"
+deleted=0
 for f in \
   "/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app" \
   "/Library/Application Support/Microsoft/MAU/Microsoft AutoUpdate.app" \
   "/Library/LaunchAgents/com.microsoft.update.agent.plist" \
   "/Library/LaunchDaemons/com.microsoft.autoupdate.helper.plist" \
   "/Library/PrivilegedHelperTools/com.microsoft.autoupdate.helper"; do
-  [ -e "$f" ] &amp;&amp; rm -rf "$f" &amp;&amp; echo "Deleted: $f"
+  [ -e "$f" ] &amp;&amp; rm -rf "$f" &amp;&amp; echo "$ts Deleted: $f" &amp;&amp; deleted=$((deleted+1))
 done
+[ "$deleted" -eq 0 ] &amp;&amp; echo "$ts Nothing to delete."
     </string>
   </array>
   <key>StartCalendarInterval</key>
